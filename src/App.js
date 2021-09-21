@@ -1,10 +1,13 @@
 import './App.css';
+import { css } from '@emotion/react';
 import Header from './Header';
+import Hero from './Hero';
 
 function App() {
   return (
     <div>
       <Header />
+      <Hero />
     </div>
   );
 }

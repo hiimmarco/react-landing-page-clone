@@ -1,8 +1,17 @@
+import { css } from '@emotion/react';
 import React from 'react';
+
+/** @jsxImportSource @emotion/react */
+
+const logo = css`
+  justify-content: flex-start;
+  padding-top: 6px;
+`;
 
 function Headerlogo() {
   return (
     <svg
+      css={logo}
       width="96"
       height="40"
       viewBox="0 0 395 104"

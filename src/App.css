@@ -8,42 +8,6 @@
   text-align: center;
 }
 
-.header {
-  background-color: #fef8f0;
-  height: 88px;
-  width: 100vw;
-}
-
-.headercontent {
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1216px;
-  padding: 24px 32px;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-}
-
-.logo {
-  justify-content: flex-start;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  color: rgb(184, 98, 0);
-  background-color: rgb(255, 226, 194);
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: bold;
-  line-height: 1.25rem;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-}
-
 .button:hover {
   transform: scale(1.05) perspective(1px);
   transition-duration: 100ms;
