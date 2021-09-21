@@ -3,7 +3,7 @@ import React from 'react';
 function Headerlogo() {
   return (
     <svg
-      width="395"
+      width="96"
       height="40"
       viewBox="0 0 395 104"
       fill="currentColor"
@@ -54,5 +54,4 @@ function Headerlogo() {
     </svg>
   );
 }
-
 export default Headerlogo;

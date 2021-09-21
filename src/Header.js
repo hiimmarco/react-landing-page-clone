@@ -6,15 +6,13 @@ function Header() {
   return (
     <div className="header">
       <div className="headercontent">
-        <div className="logo">
-          <a src="https://www.google.at">
-            <Headerlogo />
-          </a>
+        <div>
+          <Headerlogo />
         </div>
-        <nav className="navigationlinks">
-          <a>Components</a>
-          <a>UI Kits</a>
-          <a>Sell on Tailory</a>
+        <nav className="nav">
+          <a className="navelement">Components</a>
+          <a className="navelement">UI Kits</a>
+          <a className="navelement">Sell on Tailory</a>
         </nav>
 
         <a href="https://www.google.at" class="buttonLink">
