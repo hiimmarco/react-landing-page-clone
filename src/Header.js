@@ -37,10 +37,12 @@ const button = css`
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
+  cursor: pointer;
 
   :hover {
     transform: scale(1.05) perspective(1px);
     transition-duration: 100ms;
+    background-color: rgb(255, 207, 153);
   }
 `;
 

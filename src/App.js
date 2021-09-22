@@ -1,8 +1,8 @@
 import './App.css';
-import { css } from '@emotion/react';
 import Header from './Header';
 import Hero from './Hero';
 import Logobar from './Logobar';
+import Threecards from './Three-cards';
 
 function App() {
   return (
@@ -10,6 +10,18 @@ function App() {
       <Header />
       <Hero />
       <Logobar />
+      <Threecards />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </div>
   );
 }
