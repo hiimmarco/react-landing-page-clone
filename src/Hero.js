@@ -2,6 +2,7 @@
 import './App.css';
 import { css } from '@emotion/react';
 import React from 'react';
+import Inter from './fonts/Inter-Regular.ttf';
 import HeroImage from './page-header.jpg';
 
 // Write styles of the component with css-in-js using emotion
