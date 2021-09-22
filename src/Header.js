@@ -17,7 +17,7 @@ const headercontent = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1216px;
+  max-width: 1280px;
   padding: 24px 32px;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -51,9 +51,15 @@ function Header() {
           <Headerlogo />
         </div>
         <nav className="nav">
-          <a className="navelement">Components</a>
-          <a className="navelement">UI Kits</a>
-          <a className="navelement">Sell on Tailory</a>
+          <a href="https://www.google.at" className="navelement">
+            Components
+          </a>
+          <a href="https://www.google.at" className="navelement">
+            UI Kits
+          </a>
+          <a href="https://www.google.at" className="navelement">
+            Sell on Tailory
+          </a>
         </nav>
 
         <a href="https://www.google.at" class="buttonLink">

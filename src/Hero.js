@@ -2,7 +2,6 @@
 import './App.css';
 import { css } from '@emotion/react';
 import React from 'react';
-import Headerlogo from './Logo';
 import HeroImage from './page-header.jpg';
 
 // Write styles of the component with css-in-js using emotion
@@ -14,11 +13,23 @@ const herocomponent = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: auto;
-  padding: 24px 0px;
+  padding: 0px 0px;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
+`;
+
+const content = css`
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(${HeroImage});
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1216px;
+  height: 598px;
+  padding: 0px 32px;
+  border-radius: 16px;
 
   h1 {
     font-size: 3.75rem;
@@ -26,8 +37,9 @@ const herocomponent = css`
     color: rgb(255, 255, 255);
     text-align: center;
     margin-bottom: 0;
+    padding: 0px 100px;
+    font-family: 'Inter' sans-serif;
   }
-
   p {
     text-align: center;
     font-size: 1.25rem;
@@ -36,19 +48,84 @@ const herocomponent = css`
     color: rgb(229, 231, 235);
     bottom: 230px;
   }
+
   span {
     color: rgb(255, 186, 107);
   }
 `;
 
-const content = css`
-  background-image: url(${HeroImage});
+const button = css`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  color: rgb(184, 98, 0);
+  background-color: rgb(255, 226, 194);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.25rem;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-left: 1rem;
+
+  :hover {
+    transform: scale(1.05) perspective(1px);
+    transition-duration: 100ms;
+  }
+`;
+
+const searchbar = css`
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  max-width: 1216px;
-  padding: 0px 32px;
-  height: 800px;
+  justify-content: space-between;
+
+  input {
+    border: 2px solid;
+    border-radius: 30px;
+    width: 469px;
+    padding: 12px 48px 12px 16px;
+    background-color: rgb(229, 231, 235);
+    color: rgb(17, 24, 39);
+    font-size: 1rem;
+  }
+
+  span {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-left: 1rem;
+    color: rgb(229, 231, 235);
+    text-transform: uppercase;
+  }
+`;
+
+const list = css`
+  display: flex;
+  flex-direction: row;
+  color: white;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  span {
+    color: rgb(229, 231, 235);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: semi-bold;
+}
+  }
+
+  li {
+    margin-left: 12px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+}
+  }
 `;
 
 // Adding function component
@@ -66,6 +143,30 @@ function Hero() {
           design in 30 seconds or less with a premium component from our
           marketplace.
         </p>
+        <div css={searchbar}>
+          <input placeholder="Search components like 'pricing' or 'gradients'"></input>
+          <p>
+            <span>or</span>
+          </p>
+          <button css={button}>Browse collection</button>
+        </div>
+        <div css={list}>
+          <ul>
+            <span>Trending:</span>
+            <li>
+              <a href="//wwww.google.at">Gradient,</a>
+            </li>
+            <li>
+              <a href="https://wwww.google.at">Pricing,</a>
+            </li>
+            <li>
+              <a href="https://wwww.google.at">Four columns,</a>
+            </li>
+            <li>
+              <a href="https://wwww.google.at">Hero</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
