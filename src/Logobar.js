@@ -11,7 +11,7 @@ import techcrunch from './logos/techcrunch.png';
 const logobarStyles = css`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top: 3rem;
 
@@ -21,6 +21,24 @@ const logobarStyles = css`
     font-size: 0.875rem;
     line-height: 1.25rem;
     text-align: center;
+    margin-bottom: 1.5rem;
+  }
+`;
+
+const logos = css`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 1216px;
+  flex: 1;
+  flex-wrap: wrap;
+  align-self: center;
+
+  img {
+    height: 32px;
+    width: auto;
+    filter: grayscale(100%);
   }
 `;
 
@@ -28,8 +46,10 @@ export default function Logobar() {
   return (
     <div css={logobarStyles}>
       <h3>trusted by amazing companies</h3>
-      <div className="logobar">
-        <img src={techcrunch} alt="Techcrunch Logo" />
+      <div css={logos}>
+        <div>
+          <img src={techcrunch} alt="Techcrunch Logo" />
+        </div>
         <img src={producthunt} alt="Producthunt Logo" />
         <img src={adspresso} alt="Adspresso Logo" />
         <img src={cxl} alt="Cxl Logo" />

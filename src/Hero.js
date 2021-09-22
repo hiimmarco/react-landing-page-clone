@@ -118,10 +118,11 @@ const list = css`
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: bold;
+    margin-right: 12px;
   }
 
   li {
-    margin-left: 12px;
+    margin-right: 12px;
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: bold;
