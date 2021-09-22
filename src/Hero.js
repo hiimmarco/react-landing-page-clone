@@ -13,10 +13,11 @@ const herocomponent = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 0px;
+  padding: 6px 0px;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
+  font-family: 'Inter' sans-serif;
 `;
 
 const content = css`
@@ -24,6 +25,7 @@ const content = css`
     url(${HeroImage});
   background-size: cover;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   max-width: 1216px;
@@ -38,7 +40,6 @@ const content = css`
     text-align: center;
     margin-bottom: 0;
     padding: 0px 100px;
-    font-family: 'Inter' sans-serif;
   }
   p {
     text-align: center;
@@ -112,11 +113,11 @@ const list = css`
   }
 
   span {
-    color: rgb(229, 231, 235);
+    color: white;
+    opacity: 0.6;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    font-weight: semi-bold;
-}
+    font-weight: bold;
   }
 
   li {
@@ -124,7 +125,6 @@ const list = css`
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: bold;
-}
   }
 `;
 
@@ -154,7 +154,7 @@ function Hero() {
           <ul>
             <span>Trending:</span>
             <li>
-              <a href="//wwww.google.at">Gradient,</a>
+              <a href="https://wwww.google.at">Gradient,</a>
             </li>
             <li>
               <a href="https://wwww.google.at">Pricing,</a>

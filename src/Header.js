@@ -10,6 +10,7 @@ const header = css`
   background-color: #fef8f0;
   height: 88px;
   width: 100vw;
+  align-items: center;
 `;
 
 const headercontent = css`
