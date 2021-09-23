@@ -1,7 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import './App.css';
 import { css } from '@emotion/react';
-import React from 'react';
 import HeroImage from './page-header.jpg';
 
 // Write styles of the component with css-in-js using emotion

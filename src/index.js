@@ -8,7 +8,6 @@ import './fonts/Inter-Light.ttf';
 import './fonts/Inter-Medium.ttf';
 import './fonts/Inter-SemiBold.ttf';
 import './fonts/Inter-Thin.ttf';
-import { css } from '@emotion/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';

@@ -1,4 +1,5 @@
 import './App.css';
+import Categories from './Categories.js';
 import Header from './Header';
 import Hero from './Hero';
 import Logobar from './Logobar';
@@ -11,10 +12,7 @@ function App() {
       <Hero />
       <Logobar />
       <Threecards />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <Categories />
       <br></br>
       <br></br>
       <br></br>
