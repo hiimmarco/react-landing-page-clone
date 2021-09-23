@@ -10,6 +10,7 @@ const header = css`
   background-color: #fef8f0;
   height: 88px;
   width: 100vw;
+  font-family: 'Inter' sans-seri;
   align-items: center;
 `;
 
@@ -34,6 +35,7 @@ const button = css`
   font-size: 0.875rem;
   font-weight: bold;
   line-height: 1.25rem;
+  font-family: 'Inter' sans-serif;
   border: none;
   padding: 8px 16px;
   border-radius: 6px;

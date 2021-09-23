@@ -2,7 +2,6 @@
 import './App.css';
 import { css } from '@emotion/react';
 import React from 'react';
-import Inter from './fonts/Inter-Regular.ttf';
 import HeroImage from './page-header.jpg';
 
 // Write styles of the component with css-in-js using emotion
@@ -15,6 +14,7 @@ const herocomponent = css`
   justify-content: center;
   align-items: center;
   padding: 6px 0px;
+  font-family: 'Inter' sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
@@ -27,6 +27,7 @@ const content = css`
   background-size: cover;
   display: flex;
   justify-content: center;
+  font-family: 'Inter' sans-serif;
   flex-direction: column;
   align-items: center;
   max-width: 1216px;
@@ -38,6 +39,7 @@ const content = css`
     font-size: 3.75rem;
     line-height: 3.75rem;
     color: rgb(255, 255, 255);
+    font-family: 'Inter' sans-serif;
     text-align: center;
     margin-bottom: 0;
     padding: 0px 100px;
@@ -46,6 +48,7 @@ const content = css`
     text-align: center;
     font-size: 1.25rem;
     line-height: 1.75rem;
+    font-family: 'Inter' sans-serif;
     max-width: 768px;
     color: rgb(229, 231, 235);
     bottom: 230px;
