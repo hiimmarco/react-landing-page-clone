@@ -22,13 +22,12 @@ function App() {
       <Threecards />
       <img src={breakerbanner} alt="Breakder" css={breaker} />
       <Categories />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

@@ -150,7 +150,7 @@ function Hero() {
           marketplace.
         </p>
         <div css={searchbar}>
-          <input placeholder="Search components like 'pricing' or 'gradients'"></input>
+          <input placeholder="Search components like 'pricing' or 'gradients'" />
           <p>
             <span>or</span>
           </p>
