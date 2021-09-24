@@ -1,6 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import './App.css';
 import { css } from '@emotion/react';
+import celebration from './card-images/celebration.jpeg';
+import pricing from './card-images/pricing.jpeg';
+import signup from './card-images/signup.jpeg';
 import Categoriecard from './Categoriecard';
 
 const cardcomponent = css`
@@ -46,16 +49,19 @@ export default function Categories() {
         the first marketplace for Tailwind components. Buy and sell from other
         developers with just one click and speed up your development time.
       </p>
-      <div>
+      <div css={cards}>
         <Categoriecard
+          source={pricing}
           title="Pricing components"
           description="The pricing components shows all the different options your product offers to customers."
         />
         <Categoriecard
+          source={celebration}
           title="Feature components"
           description="The features component lists your product offering and explains to the user how they can benefit from using it."
         />
         <Categoriecard
+          source={signup}
           title="Signup components"
           description="The signup component lets users create an account. Sometimes it also highlights why someone should signup."
         />

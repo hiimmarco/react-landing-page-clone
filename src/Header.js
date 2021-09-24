@@ -23,6 +23,7 @@ const headercontent = css`
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
+  color: rgb(55, 65, 81);
 `;
 
 const button = css`
