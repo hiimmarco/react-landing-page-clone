@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
+import breakerbanner from './card-images/breaker-banner.png';
+import Categories from './Categories.js';
+import Header from './Header';
+import Hero from './Hero';
+import Logobar from './Logobar';
+import Threecards from './Three-cards';
+
+const breaker = css`
+  margin-top: 8rem;
+  max-height: 306px;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Hero />
+      <Logobar />
+      <Threecards />
+      <img src={breakerbanner} alt="Breakder" css={breaker} />
+      <Categories />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
